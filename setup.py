@@ -28,13 +28,15 @@ setup(
     entry_points={
         'translator_template.translators': 'example = translator_template_example.translator:main'},
     install_requires=[
-        'translator-template>=1.1'
+        'translator-template>=1.2'
     ],
     extras_require={
         'dev': [
+            'anybadge',
             'autopep8',
             'mypy',
             'pylint',
+            'pylint-exit',
             'pytest',
             'pytest-cov',
             'twine']
