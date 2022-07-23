@@ -15,7 +15,7 @@ build:
     - python -m venv venv
     - source venv/bin/activate
     - pip install -U pip setuptools wheel
-    - pip install .[dev]
+    - pip install --extra-index-url https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.neomis.games/api/v4/groups/home/-/packages/pypi/simple .[dev]
   artifacts:
     paths:
       - ./venv/
