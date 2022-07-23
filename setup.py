@@ -32,13 +32,11 @@ setup(
     ],
     extras_require={
         'dev': [
-            'anybadge',
             'autopep8',
             'mypy',
             'pylint',
             'pylint-exit',
             'pytest',
-            'pytest-cov',
-            'twine']
+            'pytest-cov']
     }
 )
